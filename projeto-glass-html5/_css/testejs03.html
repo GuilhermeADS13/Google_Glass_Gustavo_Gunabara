@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>teste javascprit</title>
+ <meta charset="UTF-8"/>
+x        var quebrada=false;    
+     function mudaLampada(tipo) {
+        if (tipo == 1) {
+            arquivo = "C:/Users/lakil/OneDrive/%C3%81rea%20de%20Trabalho/projeto-glass-html5/_imagens/lampada-acesa.jpg";
+        }
+        if (tipo == 2) {
+            arquivo="C:/Users/lakil/OneDrive/%C3%81rea%20de%20Trabalho/projeto-glass-html5/_imagens/lampada-apagada.jpg";
+        }
+        if (tipo == 3) {
+            arquivo"C:/Users/lakil/OneDrive/%C3%81rea%20de%20Trabalho/projeto-glass-html5/_imagens/lampada-quebrada.jpg";
+            quebrada=true;
+        }
+        document.getElementById('luz').src = arquivo;
+     
+     
+ </script>	
+</head>
+<body>
+<h1>Acenda a lampada</h1>
+<img src="C:\Users\lakil\OneDrive\Área de Trabalho\projeto-glass-html5\_imagens/lampada-apagada.jpg" id="luz"onmousemove="mudaLampada(1)"onmouseout="mudaLampada(2)" onclick="mudaLampada(3)">
+</body>
+</html>
+
